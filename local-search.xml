@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Comparação de eficiência dos algoritmos</title>
+    <link href="/2024/06/13/comparacao-eficiencia/"/>
+    <url>/2024/06/13/comparacao-eficiencia/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Algoritmo-Bubble-Sort"><a href="#Algoritmo-Bubble-Sort" class="headerlink" title="Algoritmo Bubble Sort"></a>Algoritmo Bubble Sort</h2><p>f(x)&#x3D;0,00000015x²−0,000231x+0,198</p><h2 id="Algoritmo-Selection-Sort"><a href="#Algoritmo-Selection-Sort" class="headerlink" title="Algoritmo Selection Sort"></a>Algoritmo Selection Sort</h2><p>g(x)&#x3D;0,0000000719x²−0,000152x+0,163</p><h2 id="Algoritmo-Insertion-Sort"><a href="#Algoritmo-Insertion-Sort" class="headerlink" title="Algoritmo Insertion Sort"></a>Algoritmo Insertion Sort</h2><p>h(x)&#x3D;0,51e^0,000239x</p><h2 id="Algoritmo-Merge-Sort"><a href="#Algoritmo-Merge-Sort" class="headerlink" title="Algoritmo Merge Sort"></a>Algoritmo Merge Sort</h2><p>f(x)&#x3D;0,00000833x−0,00214</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Ciência da Computação</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Curvas dos algoritmos</title>
+    <link href="/2024/06/13/curva-algoritmos/"/>
+    <url>/2024/06/13/curva-algoritmos/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Algoritmo-Bubble-Sort"><a href="#Algoritmo-Bubble-Sort" class="headerlink" title="Algoritmo Bubble Sort"></a>Algoritmo Bubble Sort</h2><p><img src="/img/BubbleSort.png"></p><h2 id="Algoritmo-Selection-Sort"><a href="#Algoritmo-Selection-Sort" class="headerlink" title="Algoritmo Selection Sort"></a>Algoritmo Selection Sort</h2><p><img src="/img/SelectionSort.png"></p><h2 id="Algoritmo-Insertion-Sort"><a href="#Algoritmo-Insertion-Sort" class="headerlink" title="Algoritmo Insertion Sort"></a>Algoritmo Insertion Sort</h2><p><img src="/img/InsertionSort.png"></p><h2 id="Algoritmo-Merge-Sort"><a href="#Algoritmo-Merge-Sort" class="headerlink" title="Algoritmo Merge Sort"></a>Algoritmo Merge Sort</h2><p><img src="/img/MergeSort.png"></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Ciência da Computação</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Algoritmos de Ordenação</title>
+    <link href="/2024/06/13/algoritmo-ordenacao/"/>
+    <url>/2024/06/13/algoritmo-ordenacao/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Algoritmo-Bubble-Sort"><a href="#Algoritmo-Bubble-Sort" class="headerlink" title="Algoritmo Bubble Sort"></a>Algoritmo Bubble Sort</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">def bubble_sort(arr):<br>    n = len(arr)<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n):<br>        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(0, n-i-1):<br>            <span class="hljs-keyword">if</span> arr[j] &gt; arr[j+1]:<br>                arr[j], arr[j+1] = arr[j+1], arr[j]<br></code></pre></td></tr></table></figure><h2 id="Algoritmo-Selection-Sort"><a href="#Algoritmo-Selection-Sort" class="headerlink" title="Algoritmo Selection Sort"></a>Algoritmo Selection Sort</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash">def selection_sort(arr):<br>    n = len(arr)<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n):<br>        min_idx = i<br>        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(i+1, n):<br>            <span class="hljs-keyword">if</span> arr[j] &lt; arr[min_idx]:<br>                min_idx = j<br>        arr[i], arr[min_idx] = arr[min_idx], arr[i]<br></code></pre></td></tr></table></figure><h2 id="Algoritmo-Insertion-Sort"><a href="#Algoritmo-Insertion-Sort" class="headerlink" title="Algoritmo Insertion Sort"></a>Algoritmo Insertion Sort</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash">def insertion_sort(arr):<br>    n = len(arr)<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(1, n):<br>        key = arr[i]<br>        j = i - 1<br>        <span class="hljs-keyword">while</span> j &gt;= 0 and key &lt; arr[j]:<br>            arr[j + 1] = arr[j]<br>            j -= 1<br>        arr[j + 1] = key<br></code></pre></td></tr></table></figure><h2 id="Algoritmo-Merge-Sort"><a href="#Algoritmo-Merge-Sort" class="headerlink" title="Algoritmo Merge Sort"></a>Algoritmo Merge Sort</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs bash">def merge_sort(arr):<br>    <span class="hljs-keyword">if</span> len(arr) &gt; 1:<br>        mid = len(arr) // 2<br>        L = arr[:mid]<br>        R = arr[mid:]<br><br>        merge_sort(L)<br>        merge_sort(R)<br><br>        i = j = k = 0<br><br>        <span class="hljs-keyword">while</span> i &lt; len(L) and j &lt; len(R):<br>            <span class="hljs-keyword">if</span> L[i] &lt; R[j]:<br>                arr[k] = L[i]<br>                i += 1<br>            <span class="hljs-keyword">else</span>:<br>                arr[k] = R[j]<br>                j += 1<br>            k += 1<br><br>        <span class="hljs-keyword">while</span> i &lt; len(L):<br>            arr[k] = L[i]<br>            i += 1<br>            k += 1<br><br>        <span class="hljs-keyword">while</span> j &lt; len(R):<br>            arr[k] = R[j]<br>            j += 1<br>            k += 1<br></code></pre></td></tr></table></figure><h2 id="Algoritmo-de-busca-binaria"><a href="#Algoritmo-de-busca-binaria" class="headerlink" title="Algoritmo de busca binária"></a>Algoritmo de busca binária</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs bash">def binary_search(arr, x):<br>    low = 0<br>    high = len(arr) - 1<br>    <span class="hljs-keyword">while</span> low &lt;= high:<br>        mid = (low + high) // 2<br>        <span class="hljs-keyword">if</span> arr[mid] &lt; x:<br>            low = mid + 1<br>        <span class="hljs-keyword">elif</span> arr[mid] &gt; x:<br>            high = mid - 1<br>        <span class="hljs-keyword">else</span>:<br>            <span class="hljs-built_in">return</span> mid<br>    <span class="hljs-built_in">return</span> -1<br></code></pre></td></tr></table></figure><h1 id="Exemplo-de-uso"><a href="#Exemplo-de-uso" class="headerlink" title="Exemplo de uso"></a>Exemplo de uso</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs bash">arr = [64, 34, 25, 12, 22, 11, 90]<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Array original:&quot;</span>, arr)<br><br>bubble_sort(arr)<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Bubble Sort:&quot;</span>, arr)<br><br>arr = [64, 34, 25, 12, 22, 11, 90]<br>selection_sort(arr)<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Selection Sort:&quot;</span>, arr)<br><br>arr = [64, 34, 25, 12, 22, 11, 90]<br>insertion_sort(arr)<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Insertion Sort:&quot;</span>, arr)<br><br>arr = [64, 34, 25, 12, 22, 11, 90]<br>merge_sort(arr)<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Merge Sort:&quot;</span>, arr)<br><br>arr = [11, 12, 22, 25, 34, 64, 90]<br>x = 25<br>result = binary_search(arr, x)<br><span class="hljs-keyword">if</span> result != -1:<br>    <span class="hljs-built_in">print</span>(f<span class="hljs-string">&quot;&#123;x&#125; encontrado no índice &#123;result&#125;&quot;</span>)<br><span class="hljs-keyword">else</span>:<br>    <span class="hljs-built_in">print</span>(f<span class="hljs-string">&quot;&#123;x&#125; não encontrado na lista&quot;</span>)<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Ciência da Computação</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
