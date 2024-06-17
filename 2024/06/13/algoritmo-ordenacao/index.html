@@ -16,15 +16,15 @@
   <meta name="author" content="Rafael Felipe Ueda">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Algoritmo Bubble Sort123456def bubble_sort(arr):    n &#x3D; len(arr)    for i in range(n):        for j in range(0, n-i-1):            if arr[j] &gt; arr[j+1]:                arr[j], arr[j+1] &#x3D; arr[j+1],">
+    <meta name="description" content="Segue 5 algoritmos de ordenação: Bubble Sort, Selection Sort, Insertion Sort, Merge Sort e Quick Sort.Todos os algoritmos de ordenação usam um array de entrada e retornam o array ordenado.Foram desenv">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Algoritmos de Ordenação">
 <meta property="og:url" content="https://rafaelueda.github.io/2024/06/13/algoritmo-ordenacao/index.html">
 <meta property="og:site_name" content="Portfólio">
-<meta property="og:description" content="Algoritmo Bubble Sort123456def bubble_sort(arr):    n &#x3D; len(arr)    for i in range(n):        for j in range(0, n-i-1):            if arr[j] &gt; arr[j+1]:                arr[j], arr[j+1] &#x3D; arr[j+1],">
+<meta property="og:description" content="Segue 5 algoritmos de ordenação: Bubble Sort, Selection Sort, Insertion Sort, Merge Sort e Quick Sort.Todos os algoritmos de ordenação usam um array de entrada e retornam o array ordenado.Foram desenv">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-06-13T18:21:24.000Z">
-<meta property="article:modified_time" content="2024-06-13T18:49:12.762Z">
+<meta property="article:modified_time" content="2024-06-17T23:05:30.329Z">
 <meta property="article:author" content="Rafael Felipe Ueda">
 <meta property="article:tag" content="Ciência da Computação">
 <meta name="twitter:card" content="summary_large_image">
@@ -208,7 +208,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          279 words
+          288 words
         
       </span>
     
@@ -261,7 +261,8 @@
             
               <div class="markdown-body">
                 
-                <h2 id="Algoritmo-Bubble-Sort"><a href="#Algoritmo-Bubble-Sort" class="headerlink" title="Algoritmo Bubble Sort"></a>Algoritmo Bubble Sort</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">def bubble_sort(arr):<br>    n = len(arr)<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n):<br>        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(0, n-i-1):<br>            <span class="hljs-keyword">if</span> arr[j] &gt; arr[j+1]:<br>                arr[j], arr[j+1] = arr[j+1], arr[j]<br></code></pre></td></tr></table></figure>
+                <p>Segue 5 algoritmos de ordenação: Bubble Sort, Selection Sort, Insertion Sort, Merge Sort e Quick Sort.<br>Todos os algoritmos de ordenação usam um array de entrada e retornam o array ordenado.<br>Foram desenvolvidos em Python.</p>
+<h2 id="Algoritmo-Bubble-Sort"><a href="#Algoritmo-Bubble-Sort" class="headerlink" title="Algoritmo Bubble Sort"></a>Algoritmo Bubble Sort</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">def bubble_sort(arr):<br>    n = len(arr)<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n):<br>        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(0, n-i-1):<br>            <span class="hljs-keyword">if</span> arr[j] &gt; arr[j+1]:<br>                arr[j], arr[j+1] = arr[j+1], arr[j]<br></code></pre></td></tr></table></figure>
 
 <h2 id="Algoritmo-Selection-Sort"><a href="#Algoritmo-Selection-Sort" class="headerlink" title="Algoritmo Selection Sort"></a>Algoritmo Selection Sort</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash">def selection_sort(arr):<br>    n = len(arr)<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n):<br>        min_idx = i<br>        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(i+1, n):<br>            <span class="hljs-keyword">if</span> arr[j] &lt; arr[min_idx]:<br>                min_idx = j<br>        arr[i], arr[min_idx] = arr[min_idx], arr[i]<br></code></pre></td></tr></table></figure>
 
